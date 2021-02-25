@@ -48,7 +48,7 @@ public class MoongImport {
 				stmt.execute(SQL);
 
 				SQL = "SELECT * INTO dbo." + file[i]
-						+ " FROM OPENROWSET('Microsoft.ACE.OLEDB.12.0','Excel 12.0; Database=E:\\FTP\\" + file[i]
+						+ " FROM OPENROWSET('Microsoft.ACE.OLEDB.12.0','Excel 12.0; Database=D:\\FTP\\" + file[i]
 						+ ".xlsx', [Sheet1$]);";
 				stmt.execute(SQL);
 
