@@ -28,7 +28,8 @@ public class MoongImport {
 
 		if (env.equals("production")) {
 			// Test
-			ds.setServerName("122.155.10.96");
+			//ds.setServerName("122.155.10.96");
+			ds.setServerName("127.0.0.1");
 			ds.setPortNumber(Integer.parseInt("1390"));
 		} else if (env.equals("test")) {
 			// Production
